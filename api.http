@@ -1,0 +1,36 @@
+GET http://localhost:3333
+
+###
+
+GET http://localhost:3333/videos
+
+###
+
+GET http://localhost:3333/videos?search=video
+
+### 
+
+POST http://localhost:3333/videos
+content-type: application/json
+
+{
+    "title": "video", 
+    "description": "O vídeo de hoje te mostra todos os passos para sair do zero e começar a dominar essa ferramenta que é super demandada no mercado de programação.", 
+    "duration": 90
+}
+
+
+### 
+
+PUT http://localhost:3333/videos/552fd4c5-ab49-445c-aa58-a18eb138e308
+content-type: application/json
+
+{
+    "title": "Configurando arquivo .env para proteger sua aplicação", 
+    "description": "Tutorial mega rápido de como fazer a configuração de arquivo .env, usando a biblioteca DOTENV, para proteger sua aplicação, contemplando dados sensíveis como URLs e senhas.", 
+    "duration": 6
+}
+
+###
+
+DELETE http://localhost:3333/videos/3bd13d55-4f7a-44a8-b2a5-e335517d69a5

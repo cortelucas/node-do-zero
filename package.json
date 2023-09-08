@@ -1,0 +1,20 @@
+{
+  "name": "node-do-zero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "start:dev": "node --watch --no-warnings src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.22.2",
+    "postgres": "^3.3.5",
+    "dotenv": "^16.3.1"
+  }
+}

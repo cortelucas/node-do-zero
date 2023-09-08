@@ -31,9 +31,9 @@ server.post('/videos', async (request, reply) => {
 
         await db.create({ title, description, duration })
         const video = await db.list()
-        
+
         return reply.status(201).send({
-            message: `Vídeo ${video[video.length -1].id} inserido com sucesso.`
+            message: `Vídeo ${video[video.length - 1].id} inserido com sucesso.`
         })
     } catch (error) {
         throw new Error(error)
@@ -44,7 +44,7 @@ server.put('/videos/:id', async (request, reply) => {
     try {
         const videoID = request.params.id
         const { title, description, duration } = request.body
-        
+
         await db.update(videoID, { title, description, duration })
 
         return reply.status(201).send({
@@ -72,7 +72,10 @@ server.delete('/videos/:id', async (request, reply) => {
 
 try {
     const port = process.env.PORT ?? 3333
-    await server.listen({ port })
+    await server.listen({
+        host: '0.0.0.0',
+        port
+    })
 } catch (error) {
     server.log.error(error)
     process.exit(1)

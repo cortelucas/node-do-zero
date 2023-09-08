@@ -1,16 +1,16 @@
-GET http://localhost:3333
+GET https://node-do-zero-iuqr.onrender.com/
 
 ###
 
-GET http://localhost:3333/videos
+GET https://node-do-zero-iuqr.onrender.com/videos
 
 ###
 
-GET http://localhost:3333/videos?search=video
+GET https://node-do-zero-iuqr.onrender.com/videos?search=video
 
 ### 
 
-POST http://localhost:3333/videos
+POST https://node-do-zero-iuqr.onrender.com/videos
 content-type: application/json
 
 {
@@ -22,7 +22,7 @@ content-type: application/json
 
 ### 
 
-PUT http://localhost:3333/videos/552fd4c5-ab49-445c-aa58-a18eb138e308
+PUT https://node-do-zero-iuqr.onrender.com/videos/552fd4c5-ab49-445c-aa58-a18eb138e308
 content-type: application/json
 
 {
@@ -33,4 +33,4 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:3333/videos/3bd13d55-4f7a-44a8-b2a5-e335517d69a5
+DELETE https://node-do-zero-iuqr.onrender.com/videos/3bd13d55-4f7a-44a8-b2a5-e335517d69a5
